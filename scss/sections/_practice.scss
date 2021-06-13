@@ -1,0 +1,108 @@
+.practice{
+  padding-top: 60px;
+  padding-bottom: 30px;
+  flex-direction: column;
+  align-items: center;
+  @media(min-width: 769px){
+    padding-top: 100px;
+  }
+
+  &__wrapper{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 100%;
+    @media(min-width: 1025px){
+      margin: 230px 0;
+      justify-content: center;
+      flex-direction: row;
+    }
+  }
+  &__background{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    img{
+      width: 80%;
+      @media(min-width: 769px){
+        width: 50%;
+      }
+    }
+    @media(min-width: 1025px){
+      position: absolute;
+      width: 610px;
+      right: 0;
+      img{
+        width: 100%;
+      }
+    }
+    img{
+
+    }
+  }
+  &__content{
+    position: relative;
+
+    @media(min-width: 769px){
+          padding: 0 10%;
+      width: 80%;
+    padding: 0;
+    }
+    &-inner{
+      width: 100%;
+      @media(min-width: 769px){
+      width: 530px;
+      }
+    }
+  }
+  &__title{
+
+    @media(min-width: 500px){
+      font-size: 22px;
+    }
+    @media(min-width: 769px){
+      font-size: 22px;
+    }
+    @media(min-width: 1025px){
+      font-size: 20px;
+    }
+  }
+  &__text{
+    margin: 0;
+    font-size: 14px;
+    font-weight: normal;
+    color: $grey;
+    line-height: 1.5;
+    strong {
+      margin: 0;
+      font-weight: 700;
+      color: $blue2;
+      line-height: 1.5;
+    }
+    @media(min-width: 500px){
+        font-size: 18px;
+    }
+    @media(min-width: 769px){
+      font-size: 20px;
+    }
+  }
+  &__arrow{
+    animation: cruisesArrowAnimation 2s 0s infinite;
+  }
+
+  &__arrow-container{
+    display: none;
+    @media  (min-width: 1025px){
+      display: block;
+      position: absolute;
+      bottom: -100px;
+      right: 30%;
+      width: 175px;
+      transform: rotate(
+                      20deg
+      );
+    }
+
+  }
+}

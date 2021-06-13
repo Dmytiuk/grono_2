@@ -1,0 +1,77 @@
+.form{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  @media(min-width: 1025px){
+    width: 100%;
+  }
+  input{
+    margin-bottom: 20px;
+    padding: 19px 24px;
+    font-size: 14px;
+    border-radius: 50px;
+    background: #F2F3F7;
+    font-family: 'Gotham Pro';
+    border: 0;
+    outline: none;
+    @media(min-width: 1025px){
+        font-size: 15px;
+        line-height: 20px;
+    }
+    &:nth-last-of-type(1){
+      margin-bottom: 30px;
+    }
+  }
+  input::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.3s ease;}
+  input::-moz-placeholder                {opacity: 1; transition: opacity 0.3s ease;}
+  input:-moz-placeholder                 {opacity: 1; transition: opacity 0.3s ease;}
+  input:-ms-input-placeholder            {opacity: 1; transition: opacity 0.3s ease;}
+  input:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+  input:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
+  input:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
+  input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
+  &__title{
+    color: #0977ba;
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 30px;
+    &_nomarg{
+      margin-bottom: 10px;
+    }
+  }
+  &__heading{
+    color: #0977ba;
+    font-size: 20px;
+    line-height: 30px;
+    font-family: 'Gotham Pro Black';
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 0 0 20px 0;
+    text-align: center;
+  }
+  &__bottom{
+    display: flex;
+    justify-content: space-between;
+    .btn{
+    width: 75%;
+      @media(min-width: 1025px){
+        padding: 15px 47px;
+        width: 174px;
+        height: 53px;
+      }
+
+    }
+  }
+  &__wrapper{
+    display: flex;
+    flex-direction: column;
+    background: rgba(255 , 255 , 255 , 0.7);
+    padding: 30px 25px;
+    border-radius: 10px;
+    height: fit-content;
+    @media (min-width: 1025px) {
+          padding: 50px 35px 40px 35px;
+      width: 310px;
+    }
+  }
+}
