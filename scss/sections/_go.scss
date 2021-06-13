@@ -5,10 +5,9 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  padding: 100px 0 200px;
+  padding: 50px 0 200px;
   @media(min-width: 1025px){
     padding: 0;
-    height: 100vh;
     min-height: 750px;
   }
   &__description{
@@ -33,9 +32,9 @@
     @media(min-width: 1025px){
       margin-left: 5%;
       position: relative;
-    width: 45%;
+    width: 50%;
       img{
-        width: 70%;
+        width: 75%;
       }
     }
   }

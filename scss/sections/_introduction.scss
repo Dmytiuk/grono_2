@@ -90,16 +90,15 @@
   }
   &__arrow-container{
     position: absolute;
-    top: -140px;
-    left: 60%;
-    transform: rotate(
-                    -95deg
-    );
-      width: 175px;
+    top: -130px;
+    left: 67%;
+transform: rotate(95deg) scaleY(-1);
+      width: 100px;
     @media(min-width: 500px){
       top: -140px;
     }
     @media (min-width: 1025px) {
+      transform: rotate(-95deg);
       position: absolute;
       bottom: -55px;
       left: 10%;
@@ -127,6 +126,12 @@
     width: 100%;
     left: 0;
     right: 0;
+    height: 100%;
+    object-fit: cover;
+    @media(min-width: 500px){
+      height: auto;
+      object-fit: contain;
+    }
   }
   &__title{
     font-family: 'Gotham Pro Black';
