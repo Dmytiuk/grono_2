@@ -120,6 +120,7 @@ a{
   filter: drop-shadow(-21.824px 23.403px 28.5px rgba(10,81,124,0.39));
   background-image: linear-gradient(89deg, #ffa800 0%, #ff771f 100%);
   box-shadow: 2.179px 24.905px 80.1px 9.9px rgba(0, 92, 152, 0.75);
+  transition: .3s;
   &_card{
         box-shadow: 11.176px 23.403px 30.73px 6.27px rgba(10, 81, 124, .39);
         width: 110px;
